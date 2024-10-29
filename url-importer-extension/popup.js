@@ -35,7 +35,7 @@ document.getElementById('importButton').addEventListener('click', function() {
       const trimmedUrl = url.trim();
       if (trimmedUrl) {
         if (trimmedUrl === 'chrome://newtab/') {
-          // Create a new tab without specifying a URL
+          // Create a new tab without specifying a URL bc you cant create chrome:// tabs for sec reasons
           chrome.tabs.create({ active: false }, function(tab) {
             // Optionally handle the new tab here
           });
