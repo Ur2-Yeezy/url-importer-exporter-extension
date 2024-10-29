@@ -1,0 +1,35 @@
+
+<!--/**
+ * URL Importer Extension
+ * Author: Ur2_Yeezy
+ * Description: Imports multiple URLs from a text file and opens them in new tabs.
+ */-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Importer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      min-width: 200px;
+      padding: 10px;
+    }
+    #importButton {
+      margin-top: 10px;
+    }
+    #icon {
+      width: 32px;
+      height: 32px;
+      display: block;
+      margin: 0 auto 10px auto;
+  </style>
+</head>
+<body>
+  <img id="icon" src="icons/icon32.png" alt="Extension Icon">
+  <h3>Import URLs</h3>
+  <input type="file" id="fileInput" accept=".txt"/>
+  <button id="importButton">Import URLs</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
