@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "URL Importer",
   "version": "1.0",
-  "description": "Imports multiple URLs from a text file and opens them in new tabs.",
+  "description": "Imports multiple URLs from a text file and opens them in new tabs and exports open tabs to a text file.",
   "author": "Ur2_Yeezy",
   "icons": {
     "16": "icons/icon32.png",
@@ -16,6 +16,6 @@
       "32": "icons/icon32.png",
       "48": "icons/icon32.png"}
     },
-  "permissions": ["tabs"]
+  "permissions": ["tabs", "downloads"]
 }
 

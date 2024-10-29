@@ -2,7 +2,7 @@
 <!--/**
  * URL Importer Extension
  * Author: Ur2_Yeezy
- * Description: Imports multiple URLs from a text file and opens them in new tabs.
+ * Description: Imports multiple URLs from a text file and opens them in new tabs and exports open tabs to a text file.
  */-->
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@
       min-width: 200px;
       padding: 10px;
     }
-    #importButton {
+    #importButton, #exportButton{
       margin-top: 10px;
     }
     #icon {
@@ -22,6 +22,11 @@
       height: 32px;
       display: block;
       margin: 0 auto 10px auto;
+    }
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      }
   </style>
 </head>
 <body>
@@ -29,6 +34,11 @@
   <h3>Import URLs</h3>
   <input type="file" id="fileInput" accept=".txt"/>
   <button id="importButton">Import URLs</button>
+
+  <hr/>
+
+  <h3>Export URLs</h3>
+  <button id="exportButton">Export Open Tabs</button>
 
   <script src="popup.js"></script>
 </body>
